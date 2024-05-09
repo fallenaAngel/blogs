@@ -36,6 +36,18 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'TS理论', link: '/pages/01tsjichulilun/' },
             ],
+          },
+          {
+            text: 'CSS',
+            items: [
+              { text: 'css精彩集锦', link: '/pages/01cssjingcaijijin/' },
+            ],
+          },
+          {
+            text: 'JavaScript',
+            items: [
+              { text: 'js精彩代码集锦', link: '/pages/ba1b23/' },
+            ],
           }
         ],
       },

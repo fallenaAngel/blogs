@@ -20,3 +20,6 @@ urls.txt
 
 # mac
 .DS_Store
+
+# 本地启动热更新生成的文件夹
+.temp

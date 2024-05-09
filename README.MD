@@ -22,6 +22,8 @@ npm install # or yarn install
 
 # develop
 npm run dev # or yarn dev，window系统运行npm run dev:win
+
+# dev启动时可以在dev docs后面添加 --temp .temp来开启文件热更新
 ```
 
 ## 构建
