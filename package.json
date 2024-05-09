@@ -1,5 +1,5 @@
 {
-  "name": "theme-vdoing-blog",
+  "name": "ding-blog",
   "version": "1.0.0",
   "scripts": {
     "dev": "export NODE_OPTIONS=--openssl-legacy-provider && node --max_old_space_size=4096 ./node_modules/vuepress/cli.js dev docs",
@@ -13,7 +13,6 @@
     "publish": "cd ./vdoing && npm publish && cd .. && yarn updateTheme",
     "updateTheme": "yarn remove vuepress-theme-vdoing && rm -rf node_modules && yarn && yarn add vuepress-theme-vdoing -D"
   },
-  "license": "MIT",
   "devDependencies": {
     "dayjs": "^1.9.7",
     "inquirer": "^7.1.0",
