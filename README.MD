@@ -23,3 +23,7 @@ npm install # or yarn install
 # develop
 npm run dev # or yarn dev，window系统运行npm run dev:win
 ```
+
+## 构建
+
+本地window环境构建时需要运行 ```npm run build:win```，因为项目集成了GitHub 自动CI，每次提交代码时可以自动构建并部署，配置文件是```.github/workflows/ci.yml```，yml执行环境是ubuntu Linux环境，Linux环境需要使用export配置node options，```export NODE_OPTIONS=--openssl-legacy-provider```，而window环境使用set，所以运行```npm run deploy```命令时，注意区分环境手动更改build命令。
