@@ -280,26 +280,36 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
-    // [
-    //   'vuepress-plugin-comment', // 评论
-    //   {
-    //     choosen: 'gitalk',
-    //     options: {
-    //       clientID: 'a6e1355287947096b88b',
-    //       clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-    //       repo: 'blog-gitalk-comment', // GitHub 仓库
-    //       owner: 'xugaoyi', // GitHub仓库所有者
-    //       admin: ['xugaoyi'], // 对仓库有写权限的人
-    //       // distractionFreeMode: true,
-    //       pagerDirection: 'last', // 'first'正序 | 'last'倒序
-    //       id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
-    //       title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
-    //       labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
-    //       body:
-    //         '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
-    //     },
-    //   },
-    // ],
+    [
+      'vuepress-plugin-comment', // 评论
+      {
+        choosen: 'gitalk',
+        options: {
+          clientID: 'Ov23liYJBmCcgVq2ViuL',
+          clientSecret: '9cf73d793774666a551d397147ff077b9ee6dbeb',
+          repo: 'fallenaAngel/blogs', // GitHub 仓库
+          repoId: 'R_kgDOL4s1KA',
+          category: 'Announcements',
+          categoryId: 'DIC_kwDOL4s1KM4CfRFW',
+          mapping: 'pathname',
+          strict: true, // 是否启用严格匹配，默认true
+          lazyLoading: true, // 是否启用懒加载，默认true
+          reactionsEnabled: true, // 是否启用主帖子上的反应，默认true
+          inputPosition: 'top', // 输入框的位置，默认"top"
+          lightTheme: 'preferred_color_scheme',
+          darkTheme: 'preferred_color_scheme',
+          owner: 'fallenaAngel', // GitHub仓库所有者
+          admin: ['fallenaAngel'], // 对仓库有写权限的人
+          // distractionFreeMode: true,
+          pagerDirection: 'last', // 'first'正序 | 'last'倒序
+          id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50
+          title: '「评论」<%- frontmatter.title %>', // GitHub issue 的标题
+          labels: ['Gitalk', 'Comment'], // GitHub issue 的标签
+          body:
+            '页面：<%- window.location.origin + (frontmatter.to.path || window.location.pathname) %>', // GitHub issue 的内容
+        },
+      },
+    ],
     [
       '@vuepress/last-updated', // "上次更新"时间格式
       {
