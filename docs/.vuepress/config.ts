@@ -287,7 +287,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         options: {
           clientID: 'Ov23liYJBmCcgVq2ViuL',
           clientSecret: '9cf73d793774666a551d397147ff077b9ee6dbeb',
-          repo: 'fallenaAngel/blogs', // GitHub 仓库
+          repo: 'blogs', // GitHub 仓库
           repoId: 'R_kgDOL4s1KA',
           category: 'Announcements',
           categoryId: 'DIC_kwDOL4s1KM4CfRFW',
