@@ -9,6 +9,7 @@ import htmlModules from './config/htmlModules' // 自定义插入的html块
 const WEB_SITE = `https://fallenaangel.github.io` // 网址
 
 export default defineConfig4CustomTheme<VdoingThemeConfig>({
+  base: '/blogs/',
   theme: 'vdoing', // 使用npm主题包
   // theme: resolve(__dirname, '../../vdoing'), // 使用本地主题包
 
