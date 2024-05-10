@@ -60,6 +60,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               {
                 text: '问题记录',
+                link: '/pages/101richangwentijilu/',
                 items: [
                   {
                     text: '日常问题记录', link: '/pages/101richangwentijilu/'
