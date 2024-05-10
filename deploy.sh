@@ -9,10 +9,10 @@ set -e
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
 # git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
 
-push_addr=git@github.com:fallenaAngel/fallenaAngel.github.io.git # git提交地址，也可以手动设置，比如：push_addr=git@github.com:你的名字/仓库名称.git
+push_addr=git@github.com:fallenaAngel/blogs.git # git提交地址，也可以手动设置，比如：push_addr=git@github.com:你的名字/仓库名称.git
 commit_info=`git describe --all --always --long`
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
-push_branch=master # 推送的分支
+push_branch=master:gh-pages # 推送的分支
 
 # 生成静态文件
 npm run build:win
@@ -34,7 +34,7 @@ fi
 git init
 git add -A
 git commit -m "deploy, $commit_info"
-git push -f $push_addr HEAD:$push_branch
+git push -f $push_addr $push_branch
 
 cd -
 rm -rf $dist_path
