@@ -345,6 +345,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         },
       },
     ],
+    // 顶部进度条
+    ['reading-progress'],
     // 展示站点信息
     {
       name: 'custom-plugins',
