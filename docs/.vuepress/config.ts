@@ -49,6 +49,12 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'js精彩代码集锦', link: '/pages/ba1b23/' },
             ],
+          },
+          {
+            text: 'Webpack',
+            items: [
+              { text: 'Webpack基础配置理论', link: '/pages/01webpackjichupeizhililun/' },
+            ],
           }
         ],
       },
@@ -268,6 +274,8 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           jsfiddle: false, // 是否显示 jsfiddle 链接
           codepen: true, // 是否显示 codepen 链接
           horizontal: false, // 是否展示为横向样式
+          showText: 'show code',
+          hideText: 'hide'
         },
       },
     ],
