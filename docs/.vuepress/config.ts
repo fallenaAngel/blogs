@@ -77,20 +77,41 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
               }
             ]
            },
-          { text: '面试', link: '/pages/01mianshiwentijijin/' }
+          { text: '面试', link: '/pages/01mianshiwentijijin/' },
+          {
+            text: 'Code Magic',
+            items: [
+              {
+                text: 'svg随即表情',
+                link: '/pages/magic02sjbq/'
+              }
+            ]
+          },
         ],
-      },
-      {
-        text: '收藏',
-        link: '/pages/beb6c0bd8a66cea6/',
       },
       {
         text: '索引',
         link: '/archives/',
         items: [
-          { text: '分类', link: '/categories/' },
-          { text: '标签', link: '/tags/' },
-          { text: '归档', link: '/archives/' },
+          {
+            text: '本站',
+            items: [
+              { text: '分类', link: '/categories/' },
+              { text: '标签', link: '/tags/' },
+              { text: '归档', link: '/archives/' },
+            ]
+          },
+          {
+            text: '我的',
+            link: '/about/',
+            items: [
+              {
+                text: '收藏',
+                link: '/pages/beb6c0bd8a66cea6/'
+              },
+              { text: '关于', link: '/about/website/introduce/' }
+            ]
+          }
         ],
       },
     ],
