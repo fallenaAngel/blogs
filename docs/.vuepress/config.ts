@@ -36,31 +36,23 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           // 说明：以下所有link的值只是在相应md文件头部定义的永久链接（不是什么特殊编码）。另外，注意结尾是有斜杠的
           {
             text: 'TypeScript',
-            items: [
-              { text: 'TS理论', link: '/pages/01tsjichulilun/' },
-            ],
+            link: '/pages/f6d3a125d60dc763a38584aeb9977183/'
           },
           {
             text: 'CSS',
-            items: [
-              { text: 'css精彩集锦', link: '/pages/01cssjingcaijijin/' },
-            ],
+            link: '/pages/4dfc5e2ab924c38c83d93458ddf6f688/'
           },
           {
             text: 'JavaScript',
-            items: [
-              { text: 'js精彩代码集锦', link: '/pages/ba1b23/' },
-            ],
+            link: '/pages/8cfe9dccea3f7f6b609c77a1029f5d4c/'
           },
           {
             text: 'Webpack',
-            items: [
-              { text: 'Webpack基础配置理论', link: '/pages/01webpackjichupeizhililun/' },
-            ],
+            link: '/pages/edc40a1bc97e552a55487cd6c558242e/'
           },
           {
             text: 'React',
-            link: '/pages/fereact01simplefulfill/'
+            link: '/pages/584c80fa51b8926ead4e00b273c3c3c8/'
           }
         ],
       },
