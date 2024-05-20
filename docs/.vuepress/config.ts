@@ -57,6 +57,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             items: [
               { text: 'Webpack基础配置理论', link: '/pages/01webpackjichupeizhililun/' },
             ],
+          },
+          {
+            text: 'React',
+            link: '/pages/fereact01simplefulfill/'
           }
         ],
       },
@@ -82,7 +86,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             text: 'Code Magic',
             items: [
               {
-                text: 'svg随即表情',
+                text: 'svg随机表情',
                 link: '/pages/magic02sjbq/'
               }
             ]
@@ -245,6 +249,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         content: '前端博客,个人技术博客,前端,前端开发,前端框架,web前端,前端面试题,技术文档,学习,面试,JavaScript,js,ES6,TypeScript,vue,python,css3,html5,Node,git,github,markdown',
       },
     ],
+    // 阿里云icon
+    ['link', {
+      rel: 'stylesheet',
+      href: 'https://at.alicdn.com/t/c/font_4553793_bf9krm15tta.css'
+    }],
     // ['meta', { name: 'baidu-site-verification', content: '7F55weZDDc' }], // 百度统计的站长验证（你可以去掉）
     ['meta', { name: 'theme-color', content: '#11a8cd' }], // 移动浏览器主题颜色
     // [
@@ -375,6 +384,11 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
     {
       name: 'custom-plugins',
       globalUIComponents: ["PageInfo"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
+    },
+    // 代码块折叠功能
+    {
+      name: 'custom-plugins',
+      globalUIComponents: ["BlockToggle"] // 2.x 版本 globalUIComponents 改名为 clientAppRootComponentFiles
     }
   ],
 
