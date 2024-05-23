@@ -51,6 +51,10 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
             link: '/pages/edc40a1bc97e552a55487cd6c558242e/'
           },
           {
+            text: 'Vue',
+            link: '/pages/cb2fc93fa9a32b1cd68ae060e42b4fa7/'
+          },
+          {
             text: 'React',
             link: '/pages/584c80fa51b8926ead4e00b273c3c3c8/'
           }
